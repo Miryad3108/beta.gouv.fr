@@ -20,7 +20,6 @@ layout: null
                     { "name": "{{event.name}}", "start": "{{event.start}}", "comment": "{{event.comment}}"}{% unless forloop.last %},{% endunless %}
                 {% endfor %}
                 ]
-            }
             , "phases": [
                 {% for phase in startup.phases %}
                     { "name": "{{phase.name}}", "start": "{{phase.start}}", "end": "{{phase.end}}"}{% unless forloop.last %},{% endunless %}
